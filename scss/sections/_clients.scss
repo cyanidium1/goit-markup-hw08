@@ -1,0 +1,36 @@
+.clients__header {
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+    text-align: center;
+    margin-top: 94px;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 95px;
+}
+
+.clients__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients__icon {
+    height: 60px;
+    width: 106px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin: 0 15px;
+    fill: #AFB1B8;
+    transition: 0.5s;
+}
+
+.clients__icon:hover {
+    fill: var(--blue-color);
+    border-color: var(--blue-color);
+}

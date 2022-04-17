@@ -1,0 +1,72 @@
+@import '../components/logo';
+
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ececec;
+
+
+&__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+&__nav {
+    display: flex;
+}
+
+&__menu {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+&__menu-item {
+    margin: 0 25px 0 25px;
+}
+
+&__menu-link {
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+&__menu-link:hover {
+    color: var(--blue-color);
+}
+
+&__address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+&__address-item {
+    margin-left: 30px;
+}
+
+&__address-link {
+    color: var(--gray-color);
+    transition: 0.5s;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+&__address-link:hover {
+    color: var(--blue-color);
+}
+
+&__address-link:hover .header__address-icon {
+    fill: var(--blue-color)
+}
+
+&__address-icon {
+    width: 16px;
+    height: 16px;
+    display: inline;
+    margin-right: 10px;
+    transition: 0.5s;
+    fill: var(--gray-color)
+}
+}

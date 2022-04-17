@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KekStudio v2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header__nav">
+                <a class="logo" href="./index.html"><span class="logo__colored">Web</span>Studio</a>
+                <ul class="header__menu">
+                    <li class="header__menu-item" ><a class="header__menu-link selected" href="./index.html">Студия</a></li>
+                    <li class="header__menu-item" ><a class="header__menu-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header__menu-item" ><a class="header__menu-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header__address">
+                <li class="header__address-item" ><a class="header__address-link" href="mailto:info@devstudio.com"><svg class="header__address-icon">
+                    <use href="./img/svgs/sprunk.svg#icon-email"></use>
+                </svg>info@devstudio.com</a></li>
+                <li class="header__address-item" ><a class="header__address-link" href="callto:380961111111"><svg class="header__address-icon">
+                    <use href="./img/svgs/sprunk.svg#icon-callto"></use>
+                </svg>+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- SOLUTIONS FOR BUISNESS -->
+
+    <section class="solutions">
+        <div class="solutions__container">
+            <h1 class="solutions__text">Эффективные решения для вашего бизнеса</h1>
+            <button class="solutions__button" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+    </section>
+
+    <!-- MODAL WNDW -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <div class="modal__close" data-modal-close></div>
+            <p class="modal__header" >Оставьте свои данные, мы вам перезвоним</p>
+            <form action="" class="modal__form">
+
+                <label class="label" for="name"><p class="modal__description" >Имя</p>
+                    <div class="modal__input-svg"><input class="modal__small-input" type="text" id="name">
+                        <svg class="modal__input-svg-icon">
+                            <use href="./img/svgs/cola.svg#icon-name"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label class="label" for="phone"><p class="modal__description" >Телефон</p>
+                    <div class="modal__input-svg">
+                        <input class="modal__small-input" type="text" id="phone">
+                        <svg class="modal__input-svg-icon">
+                            <use href="./img/svgs/cola.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label class="label" for="mail"><p class="modal__description" >Почта</p>
+                    <div class="modal__input-svg">
+                        <input class="modal__small-input" type="text" id="mail">
+                        <svg class="modal__input-svg-icon">
+                            <use href="./img/svgs/cola.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label>
+                    <p class="modal__description" >Комментарий</p>
+                    <textarea class="modal__big-input" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="modal__label_checkbox" for="input-confirm">
+                    <input class="modal__input-checkbox" id="input-confirm" type="checkbox">
+                    
+                        <span class="modal__span">
+                        <svg class="modal__confirm-svg">
+                            <use href="./img/svgs/cola.svg#icon-confirm" ></use>
+                        </svg></span>
+                        <p class="modal__confirm">Соглашаюсь с рассылкой и принимаю <a class="modal__confirm-link" href="">Условия договора</a></p>
+                </label>
+                <button type="submit" class="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- WHAT WE DO -->
+
+    <section class="section">
+        <div class="container">
+            <!-- 4 horizontal texts -->
+            <ul class="what-we-do">
+                <li class="what-we-do__item">
+                    <div class="what-we-do__item-pic">
+                        <svg class="what-we-do__svgs">
+                            <use href="./img/svgs/sprunk.svg#icon-Group1"></use>
+                        </svg>
+                    </div>
+                    <h3 class="what-we-do__header">Внимание к деталям</h3>
+                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </li>
+                <li class="what-we-do__item">
+                    <div class="what-we-do__item-pic">
+                        <svg class="what-we-do__svgs">
+                            <use href="./img/svgs/sprunk.svg#icon-clock-11"></use>
+                        </svg>
+                    </div>
+                    <h3 class="what-we-do__header">Пунктуальность</h3>
+                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                </li>
+                <li class="what-we-do__item">
+                    <div class="what-we-do__item-pic">
+                        <svg class="what-we-do__svgs">
+                            <use href="./img/svgs/sprunk.svg#icon-diagram-11"></use>
+                        </svg>
+                    </div>
+                    <h3 class="what-we-do__header">Планирование</h3>
+                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                </li>
+                <li class="what-we-do__item">
+                    <div class="what-we-do__item-pic">
+                        <svg class="what-we-do__svgs">
+                            <use href="./img/svgs/sprunk.svg#icon-astronaut-11"></use>
+                        </svg>
+                    </div>
+                    <h3 class="what-we-do__header">Современные технологии</h3>
+                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                </li>
+            </ul>
+            <!-- what we do text -->
+            <div>
+                <h2 class="what-we-do__main-header">Чем мы занимаемся</h2>
+                <!-- 3 pics -->
+                <ul class="what-we-do__pics">
+                    <li class="what-we-do__pics-item">
+                        <img src="./img/pics1.jpg" alt="pic" width="370">
+                        <div class="what-we-do__pics-text">Десктопные приложения</div></li>
+                    <li class="what-we-do__pics-item">
+                        <img src="./img/pics2.jpg" alt="pic!" width="370">
+                        <div class="what-we-do__pics-text">Мобильные приложения</div></li>
+                    <li class="what-we-do__pics-item">
+                        <img src="./img/pics3.jpg" alt="r u rly read this7" width="370">
+                        <div class="what-we-do__pics-text">Дизайнерские решения</div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DREAM TEAM -->
+
+    <section class="dream-team">
+        <div class="container">
+            <h2 class="dream-team__main-header">Наша команда</h2>
+            <ul class="dream-team__bobs">
+                <li class="dream-team__bobs-item" >
+                    <img src="./img/bob1.jpg" width="276" alt="kek">
+                    <div class="dream-team__bobs-text">   
+                        <p class="dream-team__bobs-header">Игорь Демьяненко</p>
+                        <p class="dream-team__bobs-work">Product Designer</p>
+                        social links list
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="#">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-fbook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="dream-team__bobs-item" >
+                    <img src="./img/bob2.jpg" width="276" alt="heh">
+                    <div class="dream-team__bobs-text">
+                    <p class="dream-team__bobs-header">Ольга Репина</p>
+                    <p class="dream-team__bobs-work">Frontend Developer</p>
+                    social links list
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="#">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-fbook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="dream-team__bobs-item" >
+                    <img src="./img/bob3.jpg" width="276" alt="mm">
+                    <div class="dream-team__bobs-text">
+                    <p class="dream-team__bobs-header">Николай Тарасов</p>
+                    <p class="dream-team__bobs-work">Marketing</p>
+                    social links list
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="#">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-fbook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="dream-team__bobs-item" >
+                    <img src="./img/bob4.jpg" width="276" alt="no">
+                    <div class="dream-team__bobs-text">
+                    <p class="dream-team__bobs-header">Михаил Ермаков</p>
+                    <p class="dream-team__bobs-work">UI Designer</p>
+                    social links list
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="#">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-fbook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link">
+                                <svg class="social-list__icon">
+                                    <use href="./img/svgs/sprunk.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- CLIENTS -->
+    <section>
+        <div class="container">
+            <h2 class="clients__header">Постоянные клиенты</h2>
+            <ul class="clients__list">
+                <li class="clients__item">
+                    <svg class="clients__icon">
+                        <use href="./img/svgs/sprunk.svg#icon-company1"></use>
+                    </svg>
+                </li>
+                <li class="clients__item">
+                    <svg class="clients__icon">
+                        <use href="./img/svgs/sprunk.svg#icon-company2"></use>
+                    </svg>
+                </li>
+                <li class="clients__item">
+                    <svg class="clients__icon">
+                        <use href="./img/svgs/sprunk.svg#icon-company3"></use>
+                    </svg>
+                </li>
+                <li class="clients__item">
+                    <svg class="clients__icon">
+                        <use href="./img/svgs/sprunk.svg#icon-company4"></use>
+                    </svg>
+                </li>
+                <li class="clients__item">
+                    <svg class="clients__icon">
+                        <use href="./img/svgs/sprunk.svg#icon-company5"></use>
+                    </svg>
+                </li>
+                <li class="clients__item">
+                    <svg class="clients__icon">
+                        <use href="./img/svgs/sprunk.svg#icon-company6"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container _footer">
+            <div class="footer__adress">
+                <a class="logo white" href="./index.html"><span class="logo__colored">Web</span>Studio</a>
+                <address class="address"><a class="white" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjTja6EwPP2AhXPwosKHU-XCiwQ8gF6BAgHEAE">г. Киев, пр-т Леси Украинки, 26</a></address>
+                <a class="email ending" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="email" href="callto:380961111111">+38 096 111 11 11</a>
+            </div>
+            <div class="footer__socials">
+                <!-- social linkss list -->
+                <p class="footer__text">присоединяйтесь</p>
+                <ul class="socials-footer">
+                    <li>
+                        <a href="#" class="socials-footer__link">
+                            <svg class="socials-footer__svg">
+                                <use href="./img/svgs/sprunk.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="socials-footer__link">
+                            <svg class="socials-footer__svg">
+                                <use href="./img/svgs/sprunk.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-footer__item">
+                        <a href="#" class="socials-footer__link">
+                            <svg class="socials-footer__svg">
+                                <use href="./img/svgs/sprunk.svg#icon-fbook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-footer__item">
+                        <a href="#" class="socials-footer__link">
+                            <svg class="socials-footer__svg">
+                                <use href="./img/svgs/sprunk.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__subscription">
+                <form action="">
+                    <label class="" for="subsemail">
+                        <p class="footer__subscription-text">Подпишитесь на рассылку</p>
+                        <input class="footer__subscription-input" type="text" id="subsemail" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="solutions__button _flex">
+                        Подписаться
+                        <svg class="footer__subs-btn-svg">
+                            <use href="./img/svgs/cola.svg#icon-iconsend" ></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

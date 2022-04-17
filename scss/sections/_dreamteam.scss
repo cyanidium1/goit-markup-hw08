@@ -1,0 +1,84 @@
+.dream-team {
+    background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.dream-team__main-header {
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+    text-align: center;
+    margin: 0px 0 50px 0;
+}
+
+.dream-team__bobs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dream-team__bobs-item {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: white;
+}
+
+.dream-team__bobs-header {
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+}
+
+.dream-team__bobs-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.dream-team__bobs-work {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.social-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list__item {
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.social-list__link {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list__icon {
+    width: 20px;
+    height: 20px;
+    /* margin-top: 7px; */
+    fill: #757575;
+}
+
+.social-list__item:hover {
+    background-color: var(--blue-color);
+}
+
+.social-list__item:hover .social-list__icon {
+    fill: white;
+}
