@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -36,8 +37,9 @@
         </div>
     </header>
     <!-- MAIN -->
-    <main>
+    
     <!-- buttons -->
+    <main>
         <section class="container _inside">
             <ul class="pf__buttons">
                 <li><button class="pf__button" type="button">Все</button></li>
@@ -177,47 +179,63 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container _footer">
-            <div class="footer__adress">
-                <a class="logo white" href="./index.html"><span class="logo__colored">Web</span>Studio</a>
-                <address class="address"><a class="white"
-                        href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjTja6EwPP2AhXPwosKHU-XCiwQ8gF6BAgHEAE">г.
-                        Киев, пр-т Леси Украинки, 26</a></address>
-                <a class="email ending" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="email" href="callto:380961111111">+38 096 111 11 11</a>
+            <div class="footer__takblet">
+                <div class="footer__adress">
+                    <a class="logo white" href="./index.html"><span class="logo__colored">Web</span>Studio</a>
+                    <address class="address"><a class="white"
+                            href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwjTja6EwPP2AhXPwosKHU-XCiwQ8gF6BAgHEAE">г.
+                            Киев, пр-т Леси Украинки, 26</a></address>
+                    <a class="email ending" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="email" href="callto:380961111111">+38 096 111 11 11</a>
+                </div>
+                <div class="footer__socials">
+                    <!-- social linkss list -->
+                    <p class="footer__text">присоединяйтесь</p>
+                    <ul class="socials-footer">
+                        <li>
+                            <a href="#" class="socials-footer__link">
+                                <svg class="socials-footer__svg">
+                                    <use href="./img/svgs/sprunk.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="socials-footer__link">
+                                <svg class="socials-footer__svg">
+                                    <use href="./img/svgs/sprunk.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-footer__item">
+                            <a href="#" class="socials-footer__link">
+                                <svg class="socials-footer__svg">
+                                    <use href="./img/svgs/sprunk.svg#icon-fbook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-footer__item">
+                            <a href="#" class="socials-footer__link">
+                                <svg class="socials-footer__svg">
+                                    <use href="./img/svgs/sprunk.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__socials">
-                <!-- social links list -->
-                <p class="footer__text">присоединяйтесь</p>
-                <ul class="socials-footer">
-                    <li class="socials-footer__item">
-                        <a href="#" class="socials-footer__link">
-                            <svg class="socials-footer__svg">
-                                <use href="./img/svgs/sprunk.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-footer__item">
-                        <a href="#" class="socials-footer__link">
-                            <svg class="socials-footer__svg">
-                                <use href="./img/svgs/sprunk.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-footer__item">
-                        <a href="#" class="socials-footer__link">
-                            <svg class="socials-footer__svg">
-                                <use href="./img/svgs/sprunk.svg#icon-fbook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-footer__item">
-                        <a href="#" class="socials-footer__link">
-                            <svg class="socials-footer__svg">
-                                <use href="./img/svgs/sprunk.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer__subscription">
+                <form action="">
+                    <label class="" for="subsemail">
+                        <p class="footer__subscription-text">Подпишитесь на рассылку</p>
+                        <input class="footer__subscription-input" type="text" id="subsemail" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="solutions__button _flex footer-button">
+                        Подписаться
+                        <svg class="footer__subs-btn-svg">
+                            <use href="./img/svgs/cola.svg#icon-iconsend"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
