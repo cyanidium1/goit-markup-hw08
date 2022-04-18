@@ -390,16 +390,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 94px 0;
-}
-
-.what-we-do__item {
-  max-width: 270px;
-  margin: 0 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .what-we-do__item-pic {
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
@@ -474,7 +469,6 @@
 
 .dream-team {
   background-color: #f5f4fa;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -502,7 +496,6 @@
 }
 
 .dream-team__bobs-item {
-  width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,7 +589,6 @@
   font-size: 36px;
   color: #212121;
   text-align: center;
-  margin-top: 94px;
 }
 
 .clients__list {
@@ -608,6 +600,8 @@
           justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 95px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients__item {
@@ -624,11 +618,10 @@
 
 .clients__icon {
   height: 60px;
-  width: 106px;
+  width: 100%;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   padding: 16px 32px;
-  margin: 0 15px;
   fill: #AFB1B8;
   -webkit-transition: 0.5s;
   transition: 0.5s;

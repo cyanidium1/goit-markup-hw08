@@ -3,7 +3,7 @@
     font-size: 36px;
     color: #212121;
     text-align: center;
-    margin-top: 94px;
+    // margin-top: 94px;
 }
 
 .clients__list {
@@ -11,6 +11,7 @@
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 95px;
+    flex-wrap: wrap;
 }
 
 .clients__item {
@@ -21,11 +22,12 @@
 
 .clients__icon {
     height: 60px;
-    width: 106px;
+    // width: 106px;
+    width: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px;
-    margin: 0 15px;
+    // margin: 0 15px;
     fill: #AFB1B8;
     transition: 0.5s;
 }
