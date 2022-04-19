@@ -4,6 +4,12 @@
 /* для пк */
 
 @media (min-width: 1200px) {
+    /* .mobile-menu {
+        display: none;
+    } */
+    .hamburger-menu {
+        display: none;
+    }
     .what-we-do__item {
         max-width: 270px;
         flex-wrap: nowrap;
@@ -25,16 +31,28 @@
     .footer__takblet{
         display: flex;
     }
+    .header__container {
+        padding: 0px;
+    }
 }
 
 /* для таблета */
 
 @media (min-width: 481px) and (max-width: 1200px) {
+    .hamburger-menu {
+        display: none;
+    }
     .header>.container {
         padding: 15px;
     }
+    .menu__mobile {
+        display: none;
+    }
     .logo {
         margin-right: 15px;
+    }
+    .mobile-menu {
+        display: none;
     }
     .header {
         padding: 0;
@@ -105,11 +123,19 @@
     .footer__subscription-text {
         margin-bottom: 20px;
     }
+    .pf__buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
     .pf__button {
         box-shadow: none;
     }
     .pf__item {
-        width: calc(50% - 30px);
+        width: calc(50% - 15px);
+    }
+    .pf__overlay {
+        padding: 10px 14px;
+        font-size: 8px;
     }
 }
 
@@ -132,10 +158,19 @@
     }
     .header {
         padding: 0;
+        position: relative;
     }
     .logo {
         font-size: 24px;
     }
+    /* .mobile-menu {
+        width: 24px;
+        height: 16px;
+        position: absolute;
+        padding: 12px 8px;
+        top: 6px;
+        right: 12px;
+    } */
     .solutions {
         max-width: 480px;
         height: auto;
@@ -233,6 +268,7 @@
         align-items: center;
     }
     .footer__subscription-input {
+        width: calc(100vw - 30px);
         margin: 20px 0;
     }
     .footer-button {
