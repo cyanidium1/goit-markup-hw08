@@ -724,6 +724,7 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /* 3 pics */
 }
 
 .what-we-do__item-pic {
@@ -746,7 +747,7 @@ a {
   height: 70px;
 }
 
-.icon {
+.what-we-do .icon {
   display: inline-block;
   width: 70px;
   height: 70px;
@@ -769,7 +770,6 @@ a {
   color: #212121;
 }
 
-/* 3 pics */
 .what-we-do__pics {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

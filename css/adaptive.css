@@ -201,6 +201,16 @@
     .what-we-do__svgs {
         width: 100%;
     }
+
+    .modal {
+        width: calc(100vw - 15px);
+        height: calc(100vh - 93px);
+    }
+    .modal__small-input, 
+    .modal__big-input {
+        width: 100%;
+    }
+
     .mobile-hide {
         display: none;
     }
