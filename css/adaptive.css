@@ -34,6 +34,13 @@
     .header__container {
         padding: 0px;
     }
+    .container {
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .section {
+        padding: 94px 0;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 789px)
@@ -113,6 +120,7 @@
     }
     ._footer {
         display: block;
+        padding: 60px 15px;
     }
     .footer__takblet {
         display: flex;

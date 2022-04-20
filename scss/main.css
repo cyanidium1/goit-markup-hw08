@@ -503,6 +503,7 @@ a {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 20;
 }
 
 .modal {
@@ -511,6 +512,7 @@ a {
   padding: 40px;
   background-color: #fff;
   border-radius: 4px;
+  z-index: 21;
 }
 
 .modal__close {
