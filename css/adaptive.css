@@ -14,7 +14,7 @@
         max-width: 270px;
         flex-wrap: nowrap;
     }
-    .what-we-do {
+    .what-we-do__container {
         padding: 94px 0;
     }
     .dream-team__bobs-item {
@@ -39,35 +39,28 @@
 /* для таблета */
 
 @media (min-width: 481px) and (max-width: 1200px) {
-    .hamburger-menu {
-        display: none;
-    }
     .header>.container {
         padding: 15px;
     }
-    .menu__mobile {
+    .header__menu {
         display: none;
     }
-    .logo {
-        margin-right: 15px;
-    }
-    .mobile-menu {
+    
+    .header__address {
         display: none;
     }
+    
+    .header>.container {
+        padding: 15px;
+    }
+    
     .header {
         padding: 0;
+        position: relative;
     }
-
-    .header__menu {
-        margin: 0;
-        flex-wrap: wrap;
-    }
-    .header__menu-item {
-        margin: 0 25px 0 0;
-    }
-    .header__address {
-        flex-direction: column;
-        margin-left: 0px;
+    
+    .logo {
+        font-size: 24px;
     }
     .what-we-do__item {
         width: calc(50% - 15px); }
@@ -137,6 +130,9 @@
         padding: 10px 14px;
         font-size: 8px;
     }
+    .footer {
+        padding: 0;
+    }
 }
 
 /* для тел */
@@ -204,7 +200,7 @@
 
     .modal {
         width: calc(100vw - 15px);
-        height: calc(100vh - 93px);
+        /* height: calc(100vh - 93px); */
     }
     .modal__small-input, 
     .modal__big-input {
